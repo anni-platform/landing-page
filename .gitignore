@@ -4,6 +4,7 @@ node_modules/
 
 # Logs and databases #
 ######################
+*.cache
 *.log
 *.sql
 *.sqlite
