@@ -1,0 +1,19 @@
+{
+  "name": "anni-landing-page",
+  "version": "1.0.0",
+  "description": "Coming soon page for Anni",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "anni-landing-page"
+  },
+  "author": "Ivan Cruz",
+  "license": "ISC",
+  "dependencies": {
+    "gatsby": "^1.0.0-beta.2",
+    "gatsby-link": "^1.0.0-beta.2"
+  }
+}
