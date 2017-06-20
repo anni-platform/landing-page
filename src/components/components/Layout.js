@@ -72,12 +72,14 @@ export const Content = styled.div`
 export const Image = styled.img`
   display: ${props => props.mobile ? "block" : "none"};
   object-fit: contain;
+  padding: 36px;
   width: calc(100% - 64px);
 
   ${Above.sm`
     display: ${props => props.tablet ? "block" : "none"};
-    width: 100%;
     height: calc(100vh - 96px);
+    padding: none;
+    width: 100%;
   `}
 
   ${Above.md`
