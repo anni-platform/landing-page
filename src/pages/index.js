@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+
 import {
   Container,
   Content,
@@ -12,7 +12,9 @@ import {
   Typed
 } from "../components";
 
-import dashboard from '../media/dashboard.png'
+import screenLG from "../media/dashboard.png";
+import screenMD from "../media/dashboard-md.png";
+import screenSM from "../media/dashboard-sm.png";
 
 class Homepage extends Component {
   state = {
@@ -38,7 +40,7 @@ class Homepage extends Component {
                 {this.state.text}
               </Typed>
               {" "}
-              to present and manage their entire workflow.
+              to manage and present their entire workflow.
             </Heading>
             <Paragraph>
               Write a script, create a moodboard, annotate your storyboards, showcase your styleframes and collaborate with your client in a single space.
@@ -49,7 +51,9 @@ class Homepage extends Component {
           </Content>
         </Container>
         <Container media>
-          <Image src={dashboard} alt="dashboard demo" />
+          <Image src={screenLG} alt="dashboard" desktop />
+          <Image src={screenMD} alt="dashboard" tablet />
+          <Image src={screenSM} alt="dashboard" mobile />
         </Container>
       </Section>
     );

@@ -12,7 +12,7 @@ export const Section = styled.div`
 export const Header = styled.div`
   left: 48px;
   position: absolute;
-  top: 48px;
+  top: 24px;
 
   ${Above.sm`
     left: 120px;
@@ -35,12 +35,14 @@ export const Container = styled.div`
   flex-grow: ${props => props.media ? 1 : 0};
   flex-wrap: wrap;
   justify-content: center;
+  max-height: 100vh;
   max-width: none;
   min-height: 540px;
   overflow: hidden;
   width: 100vw;
 
   ${Above.sm`
+    height: ${props => props.media ? "100vh" : "none"};
     min-height: 740px;
   `}
 
@@ -49,13 +51,6 @@ export const Container = styled.div`
     max-width: ${props => props.media ? "none" : "768px"};
     width: ${props => props.media ? "40vw" : "60vw"};
   `}
-
-  ${Above.xl`
-    justify-content: center;
-    max-width: ${props => props.media ? "none" : "900px"};
-    width: ${props => props.media ? "60vw" : "40vw"};
-  `}
-
 `;
 
 export const Content = styled.div`
@@ -75,18 +70,26 @@ export const Content = styled.div`
 `;
 
 export const Image = styled.img`
-  min-height: 500px;
-  width: 700px;
-  z-index: 99;
+  display: ${props => props.mobile ? "block" : "none"};
+  object-fit: contain;
+  width: calc(100% - 64px);
+
+  ${Above.sm`
+    display: ${props => props.tablet ? "block" : "none"};
+    width: 100%;
+    height: calc(100vh - 96px);
+  `}
 
   ${Above.md`
-    margin-right: -64px;
-    object-fit: contain;
-    width: 100%;
+    display: ${props => props.desktop ? "block" : "none"};
+    height: auto;
+    margin-right: -400px;
+    width: 720px;
   `}
 
   ${Above.lg`
-    margin-right: -96px;
+    width: 130%;
+    max-width: 720px;
   `}
 
   ${Above.xl`
