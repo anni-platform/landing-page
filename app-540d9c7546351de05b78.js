@@ -1,4 +1,4 @@
-webpackJsonp([3],{
+webpackJsonp([4],{
 
 /***/ "./.cache/api-runner-browser.js":
 /***/ (function(module, exports) {
@@ -59,7 +59,9 @@ webpackJsonp([3],{
 	  "index.json": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---index!./.cache/json/index.json")
 	};
 	
-	exports.layouts = {};
+	exports.layouts = {
+	  "index": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=layout-component---index!./src/layouts/index.js")
+	};
 
 /***/ }),
 
@@ -273,7 +275,7 @@ webpackJsonp([3],{
 	      "./node_modules/gatsby/dist/loaders/gatsby-module-loader/patch.js"
 	    );
 	    module.exports = function(cb) { 
-	     return __webpack_require__.e/* nsure */(2, function(_, error) {
+	     return __webpack_require__.e/* nsure */(3, function(_, error) {
 	        if (error) {
 	          console.log('bundle loading error', error)
 	          cb(true)
@@ -415,8 +417,8 @@ webpackJsonp([3],{
 	  addPagesArray: function addPagesArray(newPages) {
 	    pages = newPages;
 	    var pathPrefix = "";
-	    if (true) {
-	      pathPrefix = ("/landing-page");
+	    if (false) {
+	      pathPrefix = __PATH_PREFIX__;
 	    }
 	    findPage = (0, _findPage2.default)(newPages, pathPrefix);
 	  },
@@ -2217,6 +2219,27 @@ webpackJsonp([3],{
 
 /***/ }),
 
+/***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=layout-component---index!./src/layouts/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+	
+	    __webpack_require__(
+	      "./node_modules/gatsby/dist/loaders/gatsby-module-loader/patch.js"
+	    );
+	    module.exports = function(cb) { 
+	     return __webpack_require__.e/* nsure */(2, function(_, error) {
+	        if (error) {
+	          console.log('bundle loading error', error)
+	          cb(true)
+	        } else {
+	          cb(null, function() { return __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"plugins\":[\"/Users/ivancruz/Projects/anni/anni-landing-page/node_modules/gatsby/dist/utils/babel-plugin-extract-graphql.js\",\"/Users/ivancruz/Projects/anni/anni-landing-page/node_modules/babel-plugin-add-module-exports/lib/index.js\",\"/Users/ivancruz/Projects/anni/anni-landing-page/node_modules/babel-plugin-add-module-exports/lib/index.js\",\"/Users/ivancruz/Projects/anni/anni-landing-page/node_modules/babel-plugin-transform-object-assign/lib/index.js\"],\"presets\":[\"/Users/ivancruz/Projects/anni/anni-landing-page/node_modules/babel-preset-es2015/lib/index.js\",\"/Users/ivancruz/Projects/anni/anni-landing-page/node_modules/babel-preset-stage-0/lib/index.js\",\"/Users/ivancruz/Projects/anni/anni-landing-page/node_modules/babel-preset-react/lib/index.js\"],\"cacheDirectory\":true}!./src/layouts/index.js") })
+	        }
+	      });
+	     }
+	    
+
+/***/ }),
+
 /***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=page-component---src-pages-index-js!./src/pages/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2239,4 +2262,4 @@ webpackJsonp([3],{
 /***/ })
 
 });
-//# sourceMappingURL=app-0762a58d85318f7d166d.js.map
+//# sourceMappingURL=app-540d9c7546351de05b78.js.map
