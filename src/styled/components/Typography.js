@@ -24,6 +24,10 @@ injectGlobal`
     src: url(${ApercuBold});
     weight: 800;
   }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
 `;
 
 /*
@@ -31,7 +35,7 @@ injectGlobal`
 */
 
 export const Heading = styled.h2`
-  font-family: 'Apercu Bold', sans-serif;
+  font-family: 'Apercu', sans-serif;
   font-size: 24px;
 
   ${Above.sm`

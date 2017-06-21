@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Icon } from "../../components/Icon";
+import { Icon } from "../../components";
 
 export const Logo = styled(Icon).attrs({
   name: "logo"

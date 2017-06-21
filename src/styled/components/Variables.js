@@ -2,9 +2,11 @@
  * Colors
  */
 
-export const COPPER = "#E2A480"
-export const HAZEL  = "#FFE5CA"
-export const INK    = "#1B1D1E"
+export const CHARCOAL = "#939393"
+export const COPPER   = "#E2A480"
+export const HAZEL    = "#FFE5CA"
+export const INK      = "#1B1D1E"
+export const FLINT    = "#EBEBEB"
 
  /*
   * Easing

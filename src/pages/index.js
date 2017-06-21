@@ -12,7 +12,7 @@ import {
   Section
 } from "../styled";
 
-import Typed from "../components/Typed";
+import { Form, Typed } from "../components";
 
 import screenLG from "../media/dashboard.png";
 import screenMD from "../media/dashboard-md.png";
@@ -44,7 +44,7 @@ class Homepage extends Component {
               <br />
               Anni is currently in development. Follow our progress on GitHub and sign up below to be notified when it's out!
             </Paragraph>
-            <Input />
+            <Form />
           </Content>
         </Container>
         <Container media>

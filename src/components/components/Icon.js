@@ -9,11 +9,15 @@ export const Icon = props => {
 
   // Extract svg paths per icon into an array and provide a unique name
   switch (name) {
-
-    case "arrow-back":
+    case "arrow-left":
       pathArray = [
         "M14.3479659,20 L28.8934222,4.76190299 L23.1065778,-0.761902987 L-0.529784118,24 L23.1065778,48.761903 L28.8934222,43.238097 L14.3479659,28 L48,28 L48,20 L14.3479659,20 Z"
       ];
+      break;
+
+    case "arrow-right":
+      pathArray = ["M8,24 L38.5,24"];
+      polylinePoints = ["25 7 40 23.621 25 40.242"];
       break;
 
     case "logo":

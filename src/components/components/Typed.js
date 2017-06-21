@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { init } from "ityped";
 
-class Typed extends Component {
+export class Typed extends Component {
   componentDidMount() {
     const data = init(this.text, {
       strings: ["animators", "storytellers", "motion designers"],
@@ -21,5 +21,3 @@ class Typed extends Component {
     );
   }
 }
-
-export default Typed;
