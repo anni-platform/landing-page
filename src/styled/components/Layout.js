@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Typist from "react-typist";
 import { Above } from "./MediaTemplates";
+import { HAZEL, INK, EASE_OUT_EXPO } from "./Variables";
 
 export const Section = styled.div`
   align-items: center;
@@ -30,15 +30,14 @@ export const Header = styled.div`
 
 export const Container = styled.div`
   align-items: center;
-  background: ${props => props.media ? "#FFE5CA" : "#FFF"};
+  background: ${props => props.media && HAZEL};
   display: flex;
-  flex-grow: ${props => props.media ? 1 : 0};
+  flex-grow: ${props => props.media && 1};
   flex-wrap: wrap;
   justify-content: center;
   max-height: 100vh;
   max-width: none;
   min-height: 540px;
-  overflow: hidden;
   width: 100vw;
 
   ${Above.sm`
@@ -86,7 +85,12 @@ export const Image = styled.img`
     display: ${props => props.desktop ? "block" : "none"};
     height: auto;
     margin-right: -400px;
+    transition: 600ms ${EASE_OUT_EXPO};
     width: 720px;
+
+    :hover {
+      transform: translateX(-200px);
+    }
   `}
 
   ${Above.lg`

@@ -6,6 +6,7 @@ import {
   Header,
   Heading,
   Image,
+  Input,
   Logo,
   Paragraph,
   Section
@@ -43,6 +44,7 @@ class Homepage extends Component {
               <br />
               Anni is currently in development. Follow our progress on GitHub and sign up below to be notified when it's out!
             </Paragraph>
+            <Input />
           </Content>
         </Container>
         <Container media>

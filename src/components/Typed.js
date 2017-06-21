@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { init, destroy } from "ityped";
+import { init } from "ityped";
 
 class Typed extends Component {
   componentDidMount() {
