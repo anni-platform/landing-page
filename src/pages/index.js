@@ -8,9 +8,10 @@ import {
   Image,
   Logo,
   Paragraph,
-  Section,
-  Typed
-} from "../components";
+  Section
+} from "../styled";
+
+import Typed from "../components/Typed";
 
 import screenLG from "../media/dashboard.png";
 import screenMD from "../media/dashboard-md.png";
@@ -32,13 +33,7 @@ class Homepage extends Component {
             <Heading>
               Finally, a single space for
               {" "}
-              <Typed
-                avgTypingSpeed={20}
-                startDelay={1000}
-                onTypingDone={this.done}
-              >
-                {this.state.text}
-              </Typed>
+              <Typed data="hello" />
               {" "}
               to manage and present their entire workflow.
             </Heading>

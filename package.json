@@ -4,7 +4,7 @@
   "description": "Coming soon page for Anni",
   "main": "n/a",
   "scripts": {
-    "deploy": "gatsby build && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
     "gatsby": "^1.0.0-beta.2",
     "gatsby-link": "^1.0.0-beta.2",
     "gatsby-plugin-styled-components": "0.0.1",
+    "ityped": "^0.0.10",
     "react-typist": "^1.1.1"
   }
 }

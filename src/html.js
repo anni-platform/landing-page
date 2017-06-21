@@ -29,11 +29,9 @@ class Html extends Component {
     }
 
     return (
-      <html>
+      <html op="news" lang="en">
         <head>
           {this.props.headComponents}
-
-          <meta name="referrer" content="origin" />
           <meta charSet="utf-8" />
           <meta name="description" content="Website for Anni Platform" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

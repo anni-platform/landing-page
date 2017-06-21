@@ -415,8 +415,8 @@ webpackJsonp([3],{
 	  addPagesArray: function addPagesArray(newPages) {
 	    pages = newPages;
 	    var pathPrefix = "";
-	    if (false) {
-	      pathPrefix = __PATH_PREFIX__;
+	    if (true) {
+	      pathPrefix = ("/landing-page");
 	    }
 	    findPage = (0, _findPage2.default)(newPages, pathPrefix);
 	  },

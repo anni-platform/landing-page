@@ -1,7 +1,5 @@
 import styled, { injectGlobal } from "styled-components";
 import { Above } from "./MediaTemplates";
-import Typist from "react-typist";
-
 /*
  * Font Definitions
  */
@@ -34,11 +32,31 @@ injectGlobal`
 
 export const Heading = styled.h2`
   font-family: 'Apercu Bold', sans-serif;
-  font-size: 22px;
+  font-size: 24px;
 
   ${Above.sm`
     font-size: 32px;
   `}
+
+  > .ityped-cursor {
+    color: #E2A480;
+    animation: blink 1100ms linear infinite;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    51% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -48,30 +66,4 @@ export const Paragraph = styled.p`
   ${Above.sm`
     font-size: 18px;
   `}
-`;
-
-/*
-  Type Animation
-*/
-
-export const Typed = styled(Typist)`
-display: inline;
-> .Cursor {
-  animation: blink 1000ms linear infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  51% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 `;
