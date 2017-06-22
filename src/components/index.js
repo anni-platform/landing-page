@@ -6,4 +6,4 @@
 export { Button } from "./components/Button"
 export { Form } from "./components/Form";
 export { Icon } from "./components/Icon";
-// export { Typed } from "./components/Typed";
+export { Typed } from "./components/Typed";
