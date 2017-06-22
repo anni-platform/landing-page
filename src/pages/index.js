@@ -12,7 +12,7 @@ import {
   Section
 } from "../styled";
 
-import { Form, Typed } from "../components";
+import { Form } from "../components";
 
 import screenLG from "../media/dashboard.png";
 import screenMD from "../media/dashboard-md.png";
@@ -34,7 +34,7 @@ class Homepage extends Component {
             <Heading>
               Finally, a single space for
               {" "}
-              <Typed data="hello" />
+              {/* <Typed data="hello" /> */}
               {" "}
               to manage and present their entire workflow.
             </Heading>

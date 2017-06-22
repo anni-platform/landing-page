@@ -16,8 +16,7 @@
     "gatsby": "^1.0.0-beta.2",
     "gatsby-link": "^1.0.0-beta.2",
     "gatsby-plugin-styled-components": "0.0.1",
-    "ityped": "^0.0.10",
-    "react-typist": "^1.1.1",
-    "superagent": "^3.5.2"
+    "gh-pages": "^1.0.0",
+    "ityped": "^0.0.10"
   }
 }

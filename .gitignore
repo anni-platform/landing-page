@@ -1,6 +1,7 @@
 # Node Dependencies #
 ######################
 node_modules/
+.env
 
 # Logs and databases #
 ######################

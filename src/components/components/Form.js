@@ -5,7 +5,7 @@ import { Button, FormGroup, Input } from "../../styled";
 export class Form extends Component {
   constructor(props) {
     super(props);
-    this.state = { email: "test@test.com" };
+    this.state = { email: "ivan.cruz@gmail.com" };
   }
 
   handleChange = e => {
@@ -16,17 +16,13 @@ export class Form extends Component {
     e.preventDefault();
 
     const listId = "7059a598b1";
+    const apiKey = btoa("apikey:670539a6e5464fc9aa0eabbd4095d6db-us16");
 
-    const apiKey = new Buffer("any:56c902711fc1fd486afc6cc654975a4c-us16").toString('base64');
-    const auth = `Basic ${apiKey}`;
-
-    console.log(auth)
-
-    fetch(`https://us16.api.mailchimp.com/3.0/lists/${listId}/members`, {
+    fetch(`https://us16.api.mailchimp.com/3.0/lists/${listId}/members/`, {
       mode: "no-cors",
       method: "POST",
-      headers: {
-        Authorization: auth,
+      header: {
+        Authorization: "apikey" + apiKey,
         Accept: "application/json",
         "Content-Type": "application/json"
       },
